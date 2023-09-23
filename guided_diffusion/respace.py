@@ -77,8 +77,8 @@ class SpacedDiffusion(GaussianDiffusion):
         self.use_timesteps = set(use_timesteps)
         self.timestep_map = []
         self.original_num_steps = len(kwargs["betas"])
-        print('self.orig',self.original_num_steps )
-        print('use_timesteps',set(use_timesteps))
+        # print('self.orig',self.original_num_steps )
+        # print('use_timesteps',set(use_timesteps))
 
         base_diffusion = GaussianDiffusion(**kwargs)  # pylint: disable=missing-kwoa
         last_alpha_cumprod = 1.0

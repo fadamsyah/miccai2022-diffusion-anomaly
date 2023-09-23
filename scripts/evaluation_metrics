@@ -1,6 +1,6 @@
 
 from visdom import Visdom
-viz = Visdom(port=8850)
+# viz = Visdom(port=8850)
 from sklearn.metrics import roc_auc_score
 import matplotlib.pyplot as plt
 import numpy as np

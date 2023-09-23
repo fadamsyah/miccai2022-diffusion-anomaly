@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import argparse
 import os
 from visdom import Visdom
-viz = Visdom(port=8850)
+# viz = Visdom(port=8850)
 import sys
 sys.path.append("..")
 sys.path.append(".")

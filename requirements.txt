@@ -54,3 +54,4 @@ visdom==0.1.8.9
 websocket-client==1.2.3
 xmltodict==0.12.0
 
+-f https://download.pytorch.org/whl/torch_stable.html

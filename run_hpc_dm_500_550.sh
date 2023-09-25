@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=dm_450_500
+#SBATCH --job-name=dm_500_550
 #SBATCH --gres gpu:0
 #SBATCH --nodes 1
 #SBATCH --cpus-per-task=12
@@ -15,5 +15,5 @@ python adam/generate_brats_healthy_volume.py \
     --classifier_scale 100 --noise_level 500 --skip_healthy_slices True \
     --root_dir=/l/users/fadillah.maani/BraTS2023/Adult-Glioma/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData \
     --save_dir=/l/users/fadillah.maani/BraTS2023/Adult-Glioma/generated-mris \
-    --sample_start_id=450 --sample_end_id=500 \
+    --sample_start_id=500 --sample_end_id=550 \
     --json_filenames=filenames.json $MODEL_FLAGS $DIFFUSION_FLAGS $CLASSIFIER_FLAGS  $SAMPLE_FLAGS
